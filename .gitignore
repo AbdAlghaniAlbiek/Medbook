@@ -1,0 +1,77 @@
+# =====================
+# Node / Package managers
+# =====================
+node_modules/
+.pnpm-store/
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+
+# =====================
+# Build outputs (ALL apps & packages)
+# =====================
+dist/
+build/
+out/
+.next/
+.turbo/
+.cache/
+
+# =====================
+# Logs
+# =====================
+logs/
+*.log
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# =====================
+# Env files
+# =====================
+.env
+.env.*
+!.env.example
+
+# =====================
+# OS / Editor
+# =====================
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+
+# =====================
+# Prisma
+# =====================
+*.db
+*.sqlite
+prisma/migrations/
+
+# =====================
+# Coverage / Tests
+# =====================
+coverage/
+.nyc_output/
+
+# =====================
+# TypeScript
+# =====================
+*.tsbuildinfo
+
+# =====================
+# Monorepo specific (apps + packages)
+# =====================
+apps/**/node_modules/
+apps/**/.next/
+apps/**/dist/
+apps/**/build/
+
+packages/**/node_modules/
+packages/**/dist/
+packages/**/build/

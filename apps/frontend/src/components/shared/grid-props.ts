@@ -1,0 +1,62 @@
+export type GapX =
+  | 'gap-x-1'
+  | 'gap-x-2'
+  | 'gap-x-3'
+  | 'gap-x-4'
+  | 'gap-x-5'
+  | 'gap-x-6'
+  | 'gap-x-7'
+  | 'gap-x-8'
+  | 'gap-x-9'
+  | 'gap-x-10';
+export type GapY =
+  | 'gap-y-1'
+  | 'gap-y-2'
+  | 'gap-y-3'
+  | 'gap-y-4'
+  | 'gap-y-5'
+  | 'gap-y-6'
+  | 'gap-y-7'
+  | 'gap-y-8'
+  | 'gap-y-9'
+  | 'gap-y-10';
+
+export type SmallScreenCol =
+  | 'sm:grid-cols-1'
+  | 'sm:grid-cols-2'
+  | 'sm:grid-cols-3'
+  | 'sm:grid-cols-4'
+  | 'sm:grid-cols-5'
+  | 'sm:grid-cols-6'
+  | 'sm:grid-cols-7'
+  | 'sm:grid-cols-8'
+  | 'sm:grid-cols-9'
+  | 'sm:grid-cols-10'
+  | 'sm:grid-cols-11'
+  | 'sm:grid-cols-12';
+export type MediumScreenCol =
+  | 'md:grid-cols-1'
+  | 'md:grid-cols-2'
+  | 'md:grid-cols-3'
+  | 'md:grid-cols-4'
+  | 'md:grid-cols-5'
+  | 'md:grid-cols-6'
+  | 'md:grid-cols-7'
+  | 'md:grid-cols-8'
+  | 'md:grid-cols-9'
+  | 'md:grid-cols-10'
+  | 'md:grid-cols-11'
+  | 'md:grid-cols-12';
+export type LargeScreenCol =
+  | 'lg:grid-cols-1'
+  | 'lg:grid-cols-2'
+  | 'lg:grid-cols-3'
+  | 'lg:grid-cols-4'
+  | 'lg:grid-cols-5'
+  | 'lg:grid-cols-6'
+  | 'lg:grid-cols-7'
+  | 'lg:grid-cols-8'
+  | 'lg:grid-cols-9'
+  | 'lg:grid-cols-10'
+  | 'lg:grid-cols-11'
+  | 'lg:grid-cols-12';

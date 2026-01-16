@@ -1,0 +1,20 @@
+{
+  "name": "medbook",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Medbook an appointment booking project for doctors and patients",
+  "scripts": {
+    "dev": "pnpm -r dev",
+    "build": "pnpm -r build"
+  },
+  "keywords": [],
+  "author": "Abdulghani Albaik",
+  "license": "ISC",
+  "packageManager": "pnpm@10.14.0",
+  "devDependencies": {
+    "@types/node": "^25.0.7"
+  },
+  "dependencies": {
+    "zod": "^4.3.5"
+  }
+}

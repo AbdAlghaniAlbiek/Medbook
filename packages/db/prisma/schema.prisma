@@ -1,0 +1,94 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+  // output   = "../generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+enum UserRole {
+  Doctor
+  Patient
+}
+
+enum DoctorSpecialty {
+  General
+  Cardiology
+  Dermatology
+  Pediatrics
+  Orthopedics
+}
+
+enum DoctorExperience {
+  Beginner
+  Intermediate
+  Advanced
+}
+
+model User {
+  id               Int               @id @default(autoincrement())
+  createdAt        DateTime           @default(now())
+  updatedAt        DateTime           @updatedAt
+  deletedAt        DateTime?
+
+  isDeleted        Boolean?
+  isActive         Boolean?           @default(true) 
+
+  name             String
+  email            String             @unique
+  password         String
+  role             UserRole   
+
+  specialty        DoctorSpecialty?
+  hospital         String?
+  rating           Int?
+  fee              Int?
+  bio              String?
+  experience       DoctorExperience?
+  phoneNumber      String?
+  availableDays    String[]
+  location         Int[]
+
+  appointments             Appointment[]      @relation("patient")
+  assignedAppointments     Appointment[]      @relation("doctor")
+}
+
+
+enum AppointmentStatus {
+  Pending 
+  Rejected
+  Accepted
+}
+
+model Appointment {
+  id               Int               @id @default(autoincrement())
+  createdAt        DateTime           @default(now())
+  updatedAt        DateTime           @updatedAt
+  deletedAt        DateTime?
+
+  isDeleted        Boolean?
+  isActive         Boolean?           @default(true)
+
+  patientName      String
+  patientEmail     String
+  patientPhone     String
+  date             String           
+  time             String             
+  reason           String
+  status           AppointmentStatus?
+
+  createdById      Int
+  createdBy        User               @relation("patient", fields: [createdById], references: [id])
+
+  assignedToId     Int
+  assignedTo       User               @relation("doctor", fields: [assignedToId], references: [id])
+
+  @@unique([createdById, assignedToId])
+}
