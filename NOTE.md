@@ -6,16 +6,15 @@ You need to add **.env** files to the defined location to get project up running
 
 PATH: /packages/db
 
-```js
-DATABASE_URL =
-  "postgresql://neondb_owner:npg_Z9tUoHfz3dPG@ep-hidden-field-ahuaz9sg-pooler.c-3.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require";
+```bash
+DATABASE_URL="postgresql://neondb_owner:npg_Z9tUoHfz3dPG@ep-hidden-field-ahuaz9sg-pooler.c-3.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require"
 ```
 
 ## Backend Project
 
 PATH: /apps/backend
 
-```js
+```bash
 # Node setup
 APP_ENV=development
 APP_PORT=4000
@@ -67,9 +66,9 @@ REDIS_URL="redis://default:vkIEVH0Idy5Y1XVGjdIWSjFXkWQb7Hm6@redis-15819.c311.eu-
 
 PATH: /apps/frontend
 
-```js
-NEXT_PUBLIC_LOCAL_BACKEND_URL = "http://localhost:4000/api";
-NEXT_PUBLIC_REMOTE_BACKEND_URL = "";
+```bash
+NEXT_PUBLIC_LOCAL_BACKEND_URL="http://localhost:4000/api"
+NEXT_PUBLIC_REMOTE_BACKEND_URL=""
 
-APP_ENV = "development";
+APP_ENV="development"
 ```

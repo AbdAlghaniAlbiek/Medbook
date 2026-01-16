@@ -22,6 +22,7 @@ MedBook is booking project that enables patients to search on available doctors 
 
 # Get Started
 
+0. Verify You are connected to internet
 1. You need to follow the instructions in `NOTE.md` file to setup **.env** files for the projects
 2. Instal dependencies
 
@@ -35,10 +36,10 @@ pnpm install
 pnpm run --filter @repo/db prisma:generate
 ```
 
-4. Build `@repo/db` project
+4. Build `@repo/db` project (If you face error during build ignore and continue)
 
 ```bash
-pnpm run --filter @repo/db build
+pnpm run --filter @repo/db build (If you face error during build ignore and continue)
 ```
 
 5. Build `@repo/shared` project

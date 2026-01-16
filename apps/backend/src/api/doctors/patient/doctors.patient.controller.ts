@@ -23,7 +23,6 @@ export class DoctorsPatientController {
   @Get('')
   @HttpCode(HttpStatus.OK)
   async getPaginated(@Query() info: EntityFilter) {
-    console.log('test', info);
     return await this.service.getPaginated(info);
   }
 

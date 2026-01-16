@@ -29,8 +29,14 @@ export class AppointmentsPatientService extends AppointmentsService {
       );
     }
 
+    const { patientPhone, ...restData } = data;
     const createdAppointment = await this.prismaService.appointment.create({
-      data: { ...data, status: 'Pending', createdById: user.id },
+      data: {
+        ...restData,
+        status: 'Pending',
+        createdById: user.id,
+        patientPhone: data.patientPhone ?? '',
+      },
     });
 
     return {

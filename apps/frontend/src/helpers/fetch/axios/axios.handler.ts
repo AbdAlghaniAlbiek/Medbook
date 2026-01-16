@@ -37,6 +37,7 @@ function httpErrorHandler(error: any) {
         ) {
           throw new HttpError(httpErrorsMessages.API_NOT_FOUND);
         } else {
+          console.log(response.data);
           throw new HttpError((response.data as ErrorResponse).error);
         }
       } else if (statusCode === StatusCode.BadRequest) {

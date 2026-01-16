@@ -41,6 +41,10 @@ export class AuthApi {
     data: LoginAuthDto;
     signal?: AbortSignal;
   }): Promise<SuccessResponse<AuthResponseDto>> {
+    console.log(
+      "Path",
+      `${this.axiosInstance.getUri()}/${this.domain}/auth/login`
+    );
     return (
       await this.axiosInstance.post<SuccessResponse<AuthResponseDto>>(
         `${this.axiosInstance.getUri()}/${this.domain}/auth/login`,
