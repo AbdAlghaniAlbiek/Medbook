@@ -1,7 +1,7 @@
 # MedBook
 
 <p align="center">
- <img width="300" height="300" src="https://github.com/AbdAlghaniAlbiek/Herafi/blob/master/Herafi.UWP/Assets/logo_400px.png"> 
+ <img width="300" height="300" src="https://github.com/AbdAlghaniAlbiek/Medbook/blob/main/apps/frontend/src/assets/images/booking.png"> 
 </p>
 
 <p align="center">MonoRepo NestJs - Next.js</p>
@@ -141,14 +141,14 @@ I used `MonoRepo` architecture to share some types and schemas and manage depend
 # Screenshots
 
 <p align="center">
- <img src="https://github.com/AbdAlghaniAlbiek/Herafi/blob/master/Herafi.UWP/Assets/Screenshots/SignIn_Light.jpg"> 
+ <img src="https://github.com/AbdAlghaniAlbiek/Medbook/blob/main/screenshots/register.png"> 
 </p>
 <p align="center">
- <img src="https://github.com/AbdAlghaniAlbiek/Herafi/blob/master/Herafi.UWP/Assets/Screenshots/Dashboard.png"> 
+ <img src="https://github.com/AbdAlghaniAlbiek/Medbook/blob/main/screenshots/doctors.png"> 
 </p>
 <p align="center">
- <img src="https://github.com/AbdAlghaniAlbiek/Herafi/blob/master/Herafi.UWP/Assets/Screenshots/Settings_Light.png"> 
+ <img src="https://github.com/AbdAlghaniAlbiek/Medbook/blob/main/screenshots/doctor-details.png"> 
 </p>
 <p align="center">
- <img src="https://github.com/AbdAlghaniAlbiek/Herafi/blob/master/Herafi.UWP/Assets/Screenshots/Settings_Dark.png"> 
+ <img src="https://github.com/AbdAlghaniAlbiek/Medbook/blob/main/screenshots/appointments.png"> 
 </p>
