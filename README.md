@@ -4,7 +4,7 @@
  <img width="300" height="300" src="https://github.com/AbdAlghaniAlbiek/Medbook/blob/main/apps/frontend/src/assets/images/booking.png"> 
 </p>
 
-<p align="center">MonoRepo NestJs - Next.js</p>
+<p align="center"><b>MonoRepo NestJs - Next.js</b></p>
 
 ![Twitter Follow](https://img.shields.io/twitter/follow/AbdAlbiek?style=social) ![GitHub](https://img.shields.io/github/license/AbdAlghaniAlbiek/SQLiteDBProject)
 ![NestJS Version](https://img.shields.io/npm/v/@nestjs/core?label=nestjs)
